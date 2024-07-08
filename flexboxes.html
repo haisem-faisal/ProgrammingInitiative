@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexboxes</title>
+    <style>
+        header{
+            background-color: cornflowerblue;
+            padding: 15px;
+            text-align: center;
+        }
+        section{
+            width: 47%;
+            border: solid 1px black;
+            background-color: orange;
+            padding: 0px 10px;
+            margin: 10px;
+        }
+        #flexcontainer{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            height: 750px;
+        }
+        /* align-items - horizontal changes, text-align - vertical changes */
+    </style>
+</head>
+    <body style="margin: auto;">
+        <header>
+            <h1>Flexboxes</h1>
+        </header>
+        <main>
+            <div id="flexcontainer">
+                <section>
+                    <h2>Box 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vero quas ea ad! Alias fugiat velit dolores pariatur quam veniam, repellat doloremque voluptates commodi, odio autem ab tenetur. Quibusdam, enim. Reprehenderit vero quas ea ad! Alias fugiat velit dolores pariatur quam veniam, repellat doloremque voluptates commodi, odio autem ab tenetur. Quibusdam, enim.</p>
+                </section>
+                <section>
+                    <h2>Box 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vero quas ea ad! Alias fugiat velit dolores pariatur quam veniam, repellat doloremque voluptates commodi, odio autem ab tenetur. Quibusdam, enim. Reprehenderit vero quas ea ad! Alias fugiat velit dolores pariatur quam veniam, repellat doloremque voluptates commodi, odio autem ab tenetur. Quibusdam, enim.</p>
+                </section>
+                <section>
+                    <h2>Box 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vero quas ea ad! Alias fugiat velit dolores pariatur quam veniam, repellat doloremque voluptates commodi, odio autem ab tenetur. Quibusdam, enim. Reprehenderit vero quas ea ad! Alias fugiat velit dolores pariatur quam veniam, repellat doloremque voluptates commodi, odio autem ab tenetur. Quibusdam, enim.</p>
+                </section>
+                <section>
+                    <h2>Box 4</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vero quas ea ad! Alias fugiat velit dolores pariatur quam veniam, repellat doloremque voluptates commodi, odio autem ab tenetur. Quibusdam, enim. Reprehenderit vero quas ea ad! Alias fugiat velit dolores pariatur quam veniam, repellat doloremque voluptates commodi, odio autem ab tenetur. Quibusdam, enim.</p>
+                </section>
+                <section style="width: 100%;">
+                    <h2>Box 5</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vero quas ea ad! Alias fugiat velit dolores pariatur quam veniam, repellat doloremque voluptates commodi, odio autem ab tenetur. Quibusdam, enim. Reprehenderit vero quas ea ad! Alias fugiat velit dolores pariatur quam veniam, repellat doloremque voluptates commodi, odio autem ab tenetur. Quibusdam, enim.<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vero quas ea ad! Alias fugiat velit dolores pariatur quam veniam, repellat doloremque voluptates commodi, odio autem ab tenetur. Quibusdam, enim. Reprehenderit vero quas ea ad! Alias fugiat velit dolores pariatur quam veniam, repellat doloremque voluptates commodi, odio autem ab tenetur. Quibusdam, enim.</p>
+                </section>
+            </div>
+        </main>
+        <footer></footer>
+    </body>
+</html>
