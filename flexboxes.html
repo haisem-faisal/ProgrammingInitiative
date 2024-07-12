@@ -7,8 +7,32 @@
     <style>
         header{
             background-color: cornflowerblue;
-            padding: 15px;
             text-align: center;
+        }
+        h1{
+            margin: auto;
+            padding: 10px 0px;
+        }
+        ul{
+            border-top: solid 1px black;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            padding: 10px 25px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            padding: 10px 25px;
+        }
+        li{
+            display: block;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: blue;
         }
         section{
             width: 47%;
@@ -26,9 +50,17 @@
         /* align-items - horizontal changes, text-align - vertical changes */
     </style>
 </head>
-    <body style="margin: auto;">
+    <body style="margin: auto; font-family: sans-serif;">
         <header>
-            <h1>Flexboxes</h1>
+            <h1>Flexboxes</h1><br>
+            <ul>
+                <li><a href="#">Navigation</a></li>
+                <li><a href="#">Bar</a></li>
+                <li><a href="#">Navigation</a></li>
+                <li><a href="#">Bar</a></li>
+                <li><a href="#">Navigation</a></li>
+                <li><a href="#">Bar</a></li>
+            </ul>
         </header>
         <main>
             <div id="flexcontainer">
