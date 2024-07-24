@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Forms</title>
+    <style>
+        div{
+            border-bottom: solid 2px black;
+            padding-bottom: 20px;
+        }
+    </style>
 </head>
-    <body>
+    <body style="font-family: sans-serif;">
         <div id="login">
             <h2>Login field:</h2>
-            <form action="missing.html" method="get">
+            <form action="missing.html" method="get" enctype="multipart/form-data">
                 <label for="name">Username:</label>
                 <input type="text" name="name" id="name" required><br>
 
@@ -28,6 +34,9 @@
                 <label for="email">Enter email:</label>
                 <input type="email" name="email" id="email" placeholder="JohnDoe@domain.com" required><br>
 
+                <label for="phone">Enter phone number</label>
+                <input type="tel" name="phone" id="phone"><br>
+
                 <label>Enter username:</label>
                 <input type="text" name="username" id="username" required><br>
 
@@ -40,8 +49,70 @@
                 <label>Enter your birthdate:</label>
                 <input type="date" name="date" id="date" required><br>
 
+                <label for="proof">Proof of age document:</label><br>
+                <input type="file" name="file" id="file"><br><br>
+
                 <button type="submit">Submit</button>
             </form>
         </div>
+        <div id="survey">
+            <h2>Website Feedback Survey</h2>
+            <p>For improvements on the website, please complete the survey below, your opinion matters.</p>
+            <form action="missing.html">
+                <p><strong>How often do you use the website?</strong></p>
+                <label for="often">Often</label>
+                <input type="radio" name="frequency" id="often" value="often"><br>
+                <label for="sometimes">Sometimes</label>
+                <input type="radio" name="frequency" id="sometimes" value="sometimes"><br>
+                <label for="never">Never</label>
+                <input type="radio" name="frequency" id="never" value="never">
+                
+                <p><strong>Are any features difficult to use?</strong></p>
+                <label for="yes">Yes</label>
+                <input type="radio" name="difficult" id="yes" value="yes"><br>
+                <label for="no">No</label>
+                <input type="radio" name="difficult" id="no" value="no"><br>
+                If yes, please specify<br>
+                <textarea></textarea>
+
+                <p><strong>What aspects of the website do you find the most useful? (select all that apply)</strong></p>
+
+                <label for="search">Search function</label>
+                <input type="checkbox" name="search" id="search" value="search function"><br>
+
+                <label for="nav">Navigation bar</label>
+                <input type="checkbox" name="navigation" id="nav" value="navigation bar"><br>
+
+                <label for="notif">Notifications tab</label>
+                <input type="checkbox" name="notifications" form="notif" value="notifications tab"><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div>
+            <h2>Questionnaire</h2>
+            <form for="questionnaire">
+                <label for="age">What is your age?</label>
+                <select name="age" id="age">
+                    <option value="under_18">Under 18</option>
+                    <option label="18-24" value="18-24"></option>
+                    <option value="25_34">25-34</option>
+                    <option label="35-44" value="19-24">35-44</option>
+                    <option value="45+">45+</option>
+                </select><br>
+
+                <label for="tasks">Which of the following tech-related tasks do you perform regularly?</label>
+                <select name="tasks" id="tasks" multiple>
+                    <option label="Checking emails" value="Checking emails"></option>
+                    <option label="Managing files" value="Managing files"></option>
+                    <option label="Creating presentations" value="Creating presentations"></option>
+                    <option label="Other" value="Other"></option>
+                    <option label="None" value="None"></option>
+                </select><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <!-- The 'multiple' attribute in the select tag currently displays all items. 
+        I need it to be a drop-down list, similar to how the age range question is displayed. -->
     </body>
 </html>
