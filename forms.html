@@ -5,24 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Forms</title>
     <style>
-        div{
-            border-bottom: solid 2px black;
-            padding-bottom: 20px;
+        body{
+            font-family: arial;
+            margin: auto;
+            background-color: rgb(216, 242, 251);
+            color: black;
         }
+        header{
+            padding: 20px;
+            text-align: center;
+            background-color: rgb(32, 15, 106);
+            color: white;
+        }
+        div{
+            border-bottom: solid 1px black;
+            padding: 20px;
+        }
+        h2{
+            font-size: 30px;
+            letter-spacing: 0.05em;
+        }
+        p{
+            font-size: 18px;
+            letter-spacing: 0.1em;
+        }
+        label{
+            display: block;
+            margin-top: 1em;
+        }
+        label:first-of-type{
+            margin-top: 0;
+        }
+        textarea{
+            min-height: 8em;
+            max-height: 8em;
+            min-width: 35%;
+            max-width: 35%;
+            padding: .5em;
+            border: solid 1px black;
+            border-radius: 5px;
+        }
+        #login input{
+            width: 15em;
+            height: 1.75em;
+            border-radius: 5px;
+        }
+        #signup input[type="email"], input[type="text"], input[type="password"], input[type="re-password"], input[type="date"]{
+            width: 15em;
+        }
+        #signup input{
+            height: 1.75em;
+            border-radius: 5px;
+        }
+        #survey input[type="radio"] + label, input[type="checkbox"] + label{
+            display: inline-block;
+            padding-top: 0;
+            margin-top: 0;
+            margin-right: 25px;
+        }
+
+        #survey input[type="radio"], input[type="checkbox"] + label:first-of-type{
+            margin-left: 0;
+        }
+        #survey div{
+            display: block;
+        }
+        button[type="submit"], button[type="reset"]{
+            display: block;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            background-color: rgb(48, 27, 140);
+            color: white;
+            font-size: .8em;
+            margin: 5px 0px;
+        }
+        #survey p{
+            margin-bottom: 0;
+        }
+        select{
+            width: 15em;
+            height: 1.75em;
+            border-radius: 5px;
+        }
+        
     </style>
 </head>
-    <body style="font-family: sans-serif;">
+    <body>
+        <header>
+            <h1>HTML FORMS</h1>
+        </header>
         <div id="login">
             <h2>Login field:</h2>
             <form action="missing.html" method="get" enctype="multipart/form-data">
                 <label for="name">Username:</label>
-                <input type="text" name="name" id="name" required><br>
+                <input type="text" name="name" id="name" required>
 
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="name" required><br>
+                <input type="email" name="email" id="name" required>
 
                 <label for="password">Password:</label>
-                <input type="password" name="password" id="password" required><br>
+                <input type="password" name="password" id="password" required>
 
                 <button type="submit">Submit</button>
                 <button type="reset">Reset</button>
@@ -31,28 +113,32 @@
         <div id="signup">
             <h2>Sign up field:</h2>
             <form action="missing.html">
-                <label for="email">Enter email:</label>
-                <input type="email" name="email" id="email" placeholder="JohnDoe@domain.com" required><br>
+                <fieldset>
+                    <legend>Enter details here:</legend>
 
-                <label for="phone">Enter phone number</label>
-                <input type="tel" name="phone" id="phone"><br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="JohnDoe@domain.com" required>
 
-                <label>Enter username:</label>
-                <input type="text" name="username" id="username" required><br>
+                    <label for="phone">Phone number</label>
+                    <input type="tel" name="phone" id="phone">
 
-                <label>Enter password:</label>
-                <input type="password" name="password" id="password" required><br>
+                    <label>Username:</label>
+                    <input type="text" name="username" id="username" required>
 
-                <label>Re-enter password:</label>
-                <input type="re-password" name="re-password" id="re-password" required><br>
+                    <label>Password:</label>
+                    <input type="password" name="password" id="password" required>
 
-                <label>Enter your birthdate:</label>
-                <input type="date" name="date" id="date" required><br>
+                    <label>Re-enter password:</label>
+                    <input type="re-password" name="re-password" id="re-password" required>
 
-                <label for="proof">Proof of age document:</label><br>
-                <input type="file" name="file" id="file"><br><br>
+                    <label>Birthdate:</label>
+                    <input type="date" name="date" id="date" required>
 
-                <button type="submit">Submit</button>
+                    <label for="proof">Proof of age document:</label>
+                    <input type="file" name="file" id="file">
+
+                    <button type="submit">Submit</button>
+                </fieldset>
             </form>
         </div>
         <div id="survey">
@@ -60,36 +146,41 @@
             <p>For improvements on the website, please complete the survey below, your opinion matters.</p>
             <form action="missing.html">
                 <p><strong>How often do you use the website?</strong></p>
+                <input type="radio" name="frequency" id="often" value="often">
                 <label for="often">Often</label>
-                <input type="radio" name="frequency" id="often" value="often"><br>
+    
+                <input type="radio" name="frequency" id="sometimes" value="sometimes">
                 <label for="sometimes">Sometimes</label>
-                <input type="radio" name="frequency" id="sometimes" value="sometimes"><br>
-                <label for="never">Never</label>
+                
                 <input type="radio" name="frequency" id="never" value="never">
+                <label for="never">Never</label>
                 
                 <p><strong>Are any features difficult to use?</strong></p>
+                <input type="radio" name="difficult" id="yes" value="yes">
                 <label for="yes">Yes</label>
-                <input type="radio" name="difficult" id="yes" value="yes"><br>
+                
+                <input type="radio" name="difficult" id="no" value="no">
                 <label for="no">No</label>
-                <input type="radio" name="difficult" id="no" value="no"><br>
-                If yes, please specify<br>
+                
+                <label for="textarea">If yes, please specify</label>
                 <textarea></textarea>
 
                 <p><strong>What aspects of the website do you find the most useful? (select all that apply)</strong></p>
 
+                <input type="checkbox" name="search" id="search" value="search function">
                 <label for="search">Search function</label>
-                <input type="checkbox" name="search" id="search" value="search function"><br>
-
+                
+                <input type="checkbox" name="navigation" id="nav" value="navigation bar">
                 <label for="nav">Navigation bar</label>
-                <input type="checkbox" name="navigation" id="nav" value="navigation bar"><br>
-
+                
+                <input type="checkbox" name="notifications" form="notif" value="notifications tab">
                 <label for="notif">Notifications tab</label>
-                <input type="checkbox" name="notifications" form="notif" value="notifications tab"><br><br>
+                <br><br>
 
                 <button type="submit">Submit</button>
             </form>
         </div>
-        <div>
+        <div id="questionnaire">
             <h2>Questionnaire</h2>
             <form for="questionnaire">
                 <label for="age">What is your age?</label>
