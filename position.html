@@ -41,7 +41,29 @@
             position: relative;
             z-index: 2;
             /*the z-index is used for stacking and layering*/
-        }       
+        }
+        article{
+            position: relative;
+            /*makes the items under position:absolute bounded by the container*/
+        }
+        h5{
+            margin: auto;
+            background-color: darkgray;
+            position: absolute;
+            width: 45%;
+            top: 500px;
+        }
+        header{
+            /*position: fixed;
+            --only used for items that are never moved--
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 3; */
+            position: sticky;
+            top: 0;
+            z-index: 3;
+        }
     </style>
 </head>
     <body>
@@ -54,6 +76,7 @@
                 <article>
                     <h3>We need to be careful with position when we are writing CSS</h3>
                     <p>CSS positioning is an important part of web design because it controls where elements like text, images, and buttons appear on a webpage. Without it, elements might overlap or not align properly, making the page look messy. By using different positioning techniques—like relative, absolute, fixed, and sticky—developers can ensure that everything stays in the right place and works well on all devices.</p>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, inventore? Enim magnam explicabo velit fugiat illo aspernatur possimus necessitatibus nemo perspiciatis totam! Quas, eveniet enim.</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta pariatur officiis officia. Vitae nihil voluptatem ipsum ipsam unde! Numquam aut repellendus quos ullam magnam illum saepe accusamus fugiat porro obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta pariatur officiis officia. Vitae nihil voluptatem ipsum ipsam unde! Numquam aut repellendus quos ullam magnam illum saepe accusamus fugiat porro obcaecati. Soluta pariatur officiis officia. Vitae nihil voluptatem ipsum ipsam unde! Numquam aut repellendus quos ullam magnam illum saepe accusamus fugiat porro obcaecati. Soluta pariatur officiis officia. Vitae nihil voluptatem ipsum ipsam unde! Numquam aut repellendus quos ullam magnam illum saepe accusamus fugiat porro obcaecati. Soluta pariatur officiis officia. Vitae nihil voluptatem ipsum ipsam unde! Numquam aut repellendus quos ullam magnam illum saepe accusamus fugiat porro obcaecati. Soluta pariatur officiis officia. Vitae nihil voluptatem ipsum ipsam unde! Numquam aut repellendus quos ullam magnam illum saepe accusamus fugiat porro obcaecati.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta pariatur officiis officia. Vitae nihil voluptatem ipsum ipsam unde! Numquam aut repellendus quos ullam magnam illum saepe accusamus fugiat porro obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta pariatur officiis officia. Vitae nihil voluptatem ipsum ipsam unde! Numquam aut repellendus quos ullam magnam illum saepe accusamus fugiat porro obcaecati. Soluta pariatur officiis officia. Vitae nihil voluptatem ipsum ipsam unde! Numquam aut repellendus quos ullam magnam illum saepe accusamus fugiat porro obcaecati. Soluta pariatur officiis officia. Vitae nihil voluptatem ipsum ipsam unde! Numquam aut repellendus quos ullam magnam illum saepe accusamus fugiat porro obcaecati. Soluta pariatur officiis officia. Vitae nihil voluptatem ipsum ipsam unde! Numquam aut repellendus quos ullam magnam illum saepe accusamus fugiat porro obcaecati. Soluta pariatur officiis officia. Vitae nihil voluptatem ipsum ipsam unde! Numquam aut repellendus quos ullam magnam illum saepe accusamus fugiat porro obcaecati.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta pariatur officiis officia. Vitae nihil voluptatem ipsum ipsam unde! Numquam aut repellendus quos ullam magnam illum saepe accusamus fugiat porro obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta pariatur officiis officia. Vitae nihil voluptatem ipsum ipsam unde! Numquam aut repellendus quos ullam magnam illum saepe accusamus fugiat porro obcaecati. Soluta pariatur officiis officia. Vitae nihil voluptatem ipsum ipsam unde! Numquam aut repellendus quos ullam magnam illum saepe accusamus fugiat porro obcaecati. Soluta pariatur officiis officia. Vitae nihil voluptatem ipsum ipsam unde! Numquam aut repellendus quos ullam magnam illum saepe accusamus fugiat porro obcaecati. Soluta pariatur officiis officia. Vitae nihil voluptatem ipsum ipsam unde! Numquam aut repellendus quos ullam magnam illum saepe accusamus fugiat porro obcaecati. Soluta pariatur officiis officia. Vitae nihil voluptatem ipsum ipsam unde! Numquam aut repellendus quos ullam magnam illum saepe accusamus fugiat porro obcaecati.</p>
