@@ -8,6 +8,7 @@
         body{
             margin: auto;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #f2f2f2;
         }
         a{
             text-decoration: none;
@@ -30,7 +31,7 @@
             color: white;
         }
         header a:hover{
-            color: grey;
+            color: rgb(124, 95, 255);
         }
         h1{
             letter-spacing: 0.075em;
@@ -56,6 +57,35 @@
         }
         button:hover{
             background-color: rgb(80, 47, 223);
+        }
+
+        main{
+            
+        }
+
+        article{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: white;
+        }
+
+        aside{
+            background-color: white;
+        }
+        aside li{
+            list-style-type: none;
+        }
+        aside a{
+            color: black;
+        }
+        aside a:hover{
+            color: darkblue;
+            text-decoration: underline;
+        }
+
+        footer{
+            font-size: smaller;
         }
     </style>
 </head>
@@ -83,7 +113,27 @@
         <main>
             <article>
                 <section>
-                    <h2>Lorem Ipsum</h2>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia animi accusantium veniam soluta in ex ipsa? Vel accusantium soluta totam voluptate eum non, sint ducimus, quaerat odio dolores ipsam. Natus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia animi accusantium veniam soluta in ex ipsa? Vel accusantium soluta totam voluptate eum non, sint ducimus, quaerat odio dolores ipsam. Natus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia animi accusantium veniam soluta in ex ipsa? Vel accusantium soluta totam voluptate eum non, sint ducimus, quaerat odio dolores ipsam. Natus!
+                    </p>
+                </section>
+                <section>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia animi accusantium veniam soluta in ex ipsa? Vel accusantium soluta totam voluptate eum non, sint ducimus, quaerat odio dolores ipsam. Natus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia animi accusantium veniam soluta in ex ipsa? Vel accusantium soluta totam voluptate eum non, sint ducimus, quaerat odio dolores ipsam. Natus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia animi accusantium veniam soluta in ex ipsa? Vel accusantium soluta totam voluptate eum non, sint ducimus, quaerat odio dolores ipsam. Natus!
+                    </p>
+                </section>
+                <section>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia animi accusantium veniam soluta in ex ipsa? Vel accusantium soluta totam voluptate eum non, sint ducimus, quaerat odio dolores ipsam. Natus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia animi accusantium veniam soluta in ex ipsa? Vel accusantium soluta totam voluptate eum non, sint ducimus, quaerat odio dolores ipsam. Natus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia animi accusantium veniam soluta in ex ipsa? Vel accusantium soluta totam voluptate eum non, sint ducimus, quaerat odio dolores ipsam. Natus!
+                    </p>
+                </section>
+                <section>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia animi accusantium veniam soluta in ex ipsa? Vel accusantium soluta totam voluptate eum non, sint ducimus, quaerat odio dolores ipsam. Natus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia animi accusantium veniam soluta in ex ipsa? Vel accusantium soluta totam voluptate eum non, sint ducimus, quaerat odio dolores ipsam. Natus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia animi accusantium veniam soluta in ex ipsa? Vel accusantium soluta totam voluptate eum non, sint ducimus, quaerat odio dolores ipsam. Natus!
+                    </p>
+                </section>
+                <section>
+                    <h3>Lorem Ipsum</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia animi accusantium veniam soluta in ex ipsa? Vel accusantium soluta totam voluptate eum non, sint ducimus, quaerat odio dolores ipsam. Natus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia animi accusantium veniam soluta in ex ipsa? Vel accusantium soluta totam voluptate eum non, sint ducimus, quaerat odio dolores ipsam. Natus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia animi accusantium veniam soluta in ex ipsa? Vel accusantium soluta totam voluptate eum non, sint ducimus, quaerat odio dolores ipsam. Natus!
                     </p>
                 </section>
@@ -104,14 +154,13 @@
                 </section>
             </article>    
             <aside>
-                <h3>Side Bar:</h3>
-                <h4>Please do be sure to check out the:</h4>
-                <ul>
+                <div>
+                    <h3>Please do be sure to check out the:</h3>
                     <li><a href="">Most Recent Post</a></li>
                     <li><a href="">Relevant Post</a></li>
                     <li><a href="">Next post</a></li>
                     <li><a href="">Previous Post</a></li>
-                </ul>
+                </div>
             </aside>
         </main>
         <footer>Copyright 2024</footer>
