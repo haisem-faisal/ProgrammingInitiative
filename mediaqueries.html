@@ -5,7 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Queries</title>
     <style>
-        
+        body{
+            margin: auto;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        a{
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        header{
+            color: white;
+            background-color: darkblue;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 45px;
+            align-items: center;
+        }
+        header ul{
+            display: flex;
+            list-style-type: none;
+        }
+        header a{
+            color: white;
+        }
+        header a:hover{
+            color: grey;
+        }
+        h1{
+            letter-spacing: 0.075em;
+            font-size: 2rem;
+        }
     </style>
 </head>
     <body>
@@ -19,7 +49,7 @@
                 </ul>
             </nav>
         </header>
-        <section>
+        <section id="hero">
             <h2>Media Queries</h2>
                 <div>
                     <p>This page is built for you to be able to view it regardless of whether you are using a mobile device, tablet, laptop, desktop or even a TV.<br>
